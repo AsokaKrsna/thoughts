@@ -10,9 +10,9 @@ export default function Comments() {
         <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
             <Giscus
                 repo="AsokaKrsna/thoughts"
-                repoId=""
+                repoId="R_kgDORQZn_g"
                 category="Announcements"
-                categoryId=""
+                categoryId="DIC_kwDORQZn_s4C2cGC"
                 mapping="pathname"
                 strict="0"
                 reactionsEnabled="1"
