@@ -40,7 +40,7 @@ export default function AboutPage() {
                     <h2>Get in Touch</h2>
                     <p>
                         Find me on <a href="https://github.com/AsokaKrsna" target="_blank" rel="noopener noreferrer">GitHub</a>,
-                        or reach out via <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>.
+                        or reach out via <a href="https://x.com/Durjoy_02" target="_blank" rel="noopener noreferrer">Twitter</a>.
                         Also, try pressing <kbd>Ctrl+K</kbd> anywhere on the site. And check the bottom-right corner. 😉
                     </p>
                 </div>

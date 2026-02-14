@@ -17,10 +17,10 @@ export default function Footer() {
                     <a href="https://github.com/AsokaKrsna" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={styles.socialLink}>
                         <Github size={18} />
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className={styles.socialLink}>
+                    <a href="https://x.com/Durjoy_02" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className={styles.socialLink}>
                         <Twitter size={18} />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={styles.socialLink}>
+                    <a href="https://www.linkedin.com/in/durjoy-majumdar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={styles.socialLink}>
                         <Linkedin size={18} />
                     </a>
                 </div>
