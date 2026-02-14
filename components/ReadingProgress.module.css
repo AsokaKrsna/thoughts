@@ -1,0 +1,13 @@
+.bar {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    width: var(--progress);
+    height: 2px;
+    z-index: 999;
+    background: linear-gradient(90deg,
+            hsl(var(--bar-hue), 60%, 55%),
+            hsl(calc(var(--bar-hue) + 30), 60%, 60%));
+    box-shadow: 0 0 8px hsla(var(--bar-hue), 60%, 55%, 0.4);
+    transition: width 0.1s linear;
+}

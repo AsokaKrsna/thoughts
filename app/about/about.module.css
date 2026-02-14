@@ -1,0 +1,71 @@
+.page {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.content {
+    animation: fadeIn 0.6s ease 0.15s forwards;
+    opacity: 0;
+}
+
+.content p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+}
+
+.content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.content h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 2.5em;
+    margin-bottom: 0.8em;
+    color: var(--text-primary);
+}
+
+.content a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: rgba(59, 130, 246, 0.3);
+    text-underline-offset: 3px;
+}
+
+.content a:hover {
+    text-decoration-color: var(--accent);
+}
+
+.content kbd {
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    color: var(--text-secondary);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

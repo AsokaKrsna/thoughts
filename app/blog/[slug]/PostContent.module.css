@@ -1,0 +1,135 @@
+.page {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    position: relative;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 48px;
+}
+
+.article {
+    max-width: var(--content-width);
+    align-self: start;
+}
+
+.aside {
+    min-width: 0;
+}
+
+/* Header */
+.header {
+    margin-bottom: 40px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 12px;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.description {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 16px;
+    animation: fadeIn 0.5s ease 0.1s forwards;
+    opacity: 0;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: fadeIn 0.5s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+/* Cover */
+.coverWrapper {
+    margin-bottom: 40px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    animation: fadeIn 0.6s ease 0.3s forwards;
+    opacity: 0;
+}
+
+.cover {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Content */
+.content {
+    animation: fadeIn 0.6s ease 0.3s forwards;
+    opacity: 0;
+}
+
+/* Background Glow */
+.backgroundGlow {
+    position: fixed;
+    top: 20%;
+    right: -200px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+            hsla(var(--glow-hue), 50%, 45%, 0.04) 0%,
+            transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1100px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .aside {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
